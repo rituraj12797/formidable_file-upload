@@ -21,7 +21,7 @@ async function fileUpload(req, res, next){
 
     console.log(fileNames);
 
-    deleteFiles(fileNames);
+    deleteFiles(fileNames); // delte files based on file names
 
     return res.status(200).json({
       message: "done",
